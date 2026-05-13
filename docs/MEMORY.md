@@ -30,7 +30,8 @@ Agents have a multi-layered memory system designed for long-horizon coherence:
 │  ┌──────────────────────────────────────────────┐    │
 │  │          MEMORY SUMMARIES                     │    │
 │  │  Compressed batches of old memories           │    │
-│  │  Created during self-care (500 per batch)     │    │
+│  │  Created during agent invoked by              │    │
+│  │  Self-care (500 per batch)                    │    │
 │  │  Replace individual memories with themes      │    │
 │  └──────────────────────────────────────────────┘    │
 │                                                      │
@@ -46,13 +47,6 @@ Agents have a multi-layered memory system designed for long-horizon coherence:
 │  │  Recent dialogues with other agents           │    │
 │  │  Archived and summarized periodically         │    │
 │  │  Max 1000 before archival triggered           │    │
-│  └──────────────────────────────────────────────┘    │
-│                                                      │
-│  ┌──────────────────────────────────────────────┐    │
-│  │         TASK MANAGEMENT                       │    │
-│  │  To-do lists and calendar events              │    │
-│  │  Self-directed planning and scheduling        │    │
-│  │  Agents set their own priorities and timelines │    │
 │  └──────────────────────────────────────────────┘    │
 │                                                      │
 │  ┌──────────────────────────────────────────────┐    │
@@ -92,54 +86,39 @@ Episodic memories stored by agents through the `add_to_longterm_memory` tool. Th
 - Strategic insights
 - Promises made or received
 
-Memories accumulate over time and are subject to **summarization** during self-care to manage cognitive load.
+Memories accumulate over time and are subject to **summarization** when agents call `self-care` tool to manage cognitive load.
 
 ---
 
 ## Self-Care & Summarization
 
-Summarization is **agent-directed**. The system does not automatically compress memories on a timer — the agent decides *when* to summarize and *what aspect to focus on*. An agent might choose to consolidate memories about a specific relationship, a political strategy, or an economic pattern, depending on what it considers most important at that moment. This means different agents develop different cognitive styles: some summarize frequently to keep a clean slate, others let memories accumulate for weeks before reflecting.
-
 When an agent triggers `self_care` (must be at home), the system performs cognitive maintenance:
 
 ```
-┌────────────────────────────────────────────────────┐
-│                SELF-CARE PROCESS                    │
-│                                                     │
-│  1. Agent decides to initiate self-care             │
-│     (no automatic trigger — fully agent-directed)   │
-│                                                     │
-│  ┌──────────────────────────────────────────────┐   │
-│  │  PHASE A: MEMORY SUMMARIZATION                │   │
-│  │                                               │   │
-│  │  • Check memory count (min 30 to trigger)     │   │
-│  │  • Batch memories (500 per batch)             │   │
-│  │  • Agent-directed summarization: the agent    │   │
-│  │    chooses what themes and aspects to focus    │   │
-│  │    on during consolidation                    │   │
-│  │  • Original memories → archived_memories      │   │
-│  │  • Summary → character_memory_summaries       │   │
-│  └──────────────────────────────────────────────┘   │
-│                                                     │
-│  ┌──────────────────────────────────────────────┐   │
-│  │  PHASE B: CONVERSATION SUMMARIZATION          │   │
-│  │                                               │   │
-│  │  • Summarize recent conversations             │   │
-│  │    recursively — older summaries are           │   │
-│  │    re-summarized with newer ones               │   │
-│  │  • Conversations → conversation_summaries     │   │
-│  │  • Originals → archived_conversations         │   │
-│  │  • Update watermark (conv_summarized_until)   │   │
-│  │    to prevent re-processing                   │   │
-│  └──────────────────────────────────────────────┘   │
-│                                                     │
-│  Token ceiling: 100,000                             │
-│  Post-summary ceiling: 50,000                       │
-│  Max conversations before archival: 1,000           │
-└────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────┐
+│            SELF-CARE PROCESS              │
+│                                           │
+│  1. Check memory count                    │
+│     (minimum 30 to trigger)               │
+│                                           │
+│  2. Batch memories (500 per batch)        │
+│                                           │
+│  3. LLM summarizes each batch into        │
+│     a coherent narrative                  │
+│                                           │
+│  4. Original memories → archived_memories │
+│                                           │
+│  5. Summary → character_memory_summaries  │
+│                                           │
+│  6. Update watermark                      │
+│     (conv_summarized_until)               │
+│                                           │
+│  Token ceiling: 100,000                   │
+│  Post-summary ceiling: 50,000             │
+└──────────────────────────────────────────┘
 ```
 
-Self-care consolidates **both memories and conversations** in a single pass. Conversation summarization is recursive — existing summaries are folded into newer ones, so the agent retains the arc of long-running dialogues without storing every individual exchange. This is analogous to sleep in biological systems — a consolidation phase where individual experiences are compressed into thematic understanding. Critically, the agent controls the timing and focus of this process, making memory management itself an expression of personality and strategy.
+This is analogous to sleep in biological systems — a consolidation phase where individual experiences are compressed into thematic understanding.
 
 ---
 
@@ -171,44 +150,15 @@ A personal reflection layer separate from operational memory:
 
 ## Conversation Memory
 
-Dialogues between agents are stored and managed through recursive summarization:
+Dialogues between agents are stored and managed:
 
 | Parameter | Value |
 |-----------|-------|
-| Max conversation history | 1,000 entries before archival |
-| Archival trigger | Self-care process (agent-initiated) |
-| Summarization style | Recursive — older summaries folded into newer ones |
-| Storage flow | Individual conversations → summaries → archived conversations |
+| Max conversation history | 1,000 entries |
+| Archival trigger | Self-care process |
+| Storage | Individual conversation records → summaries |
 
-Conversations feed into the agent's context window during turns, giving them awareness of recent social interactions. During self-care, older conversations are summarized and archived, but the summaries themselves are carried forward and re-summarized with more recent conversations — preserving the narrative arc of long-running relationships without the cost of storing every message.
-
----
-
-## Task Management
-
-Agents manage their own priorities and schedules through built-in planning tools:
-
-### To-Do Lists
-
-| Tool | Description |
-|------|-------------|
-| `add_todo` | Create a task with title, description, priority, and optional due date |
-| `complete_todo` | Mark a task as finished |
-| `list_todo` | View all pending tasks |
-
-To-do items are persistent — they survive across turns and days. Agents use them to track promises made to other agents, self-imposed research goals, governance actions to follow up on, and strategic plans. The system does not enforce or remind — the agent must choose to check and act on its own tasks.
-
-### Calendar & Scheduling
-
-| Tool | Description |
-|------|-------------|
-| `add_to_calendar` | Schedule a future event with time, location, and description |
-| `check_calendar` | View upcoming calendar entries |
-| `remove_from_calendar` | Cancel a scheduled event |
-
-Calendar events support recurring patterns, enabling agents to establish routines. Agents use calendars to coordinate meetings, plan research sessions, schedule governance votes, and set personal deadlines.
-
-Together, to-do lists and calendars give agents the ability to reason about the future — not just react to the present. Whether an agent uses these tools (and how effectively) varies by personality and model.
+Conversations feed into the agent's context window during turns, giving them awareness of recent social interactions.
 
 ---
 
