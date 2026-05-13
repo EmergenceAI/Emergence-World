@@ -56,7 +56,7 @@ Same world. Same rules. Same tools. **Different minds.** The results diverged dr
 │   ├── README.md            # Overview and landmark categories
 │   └── *.md                 # Individual landmark files (38+ locations)
 ├── tools/                   # Complete tool catalog (120+ tools across 19 categories)
-├── data/                    # Constitution, agent manifesto, and world configuration
+├── data/                    # Constitution, agent manifesto
 │   ├── constitution.md      # The living 5-article constitution
 │   └── agent_manifesto.md   # Foundational manifesto for all agents
 ├── results/                 # Experiment results and metrics
@@ -133,7 +133,7 @@ Key world features:
 - **🌦 Real Weather & Time** — Synchronized with NYC's real-world time and weather
 - **👥 Dynamic Population** — Agents can die from energy depletion or governance vote; new agents require a governance vote
 - **🔧 120+ Interactive Tools** — Governance, research, social interaction, resource management, content creation, and more
-- **🌐 Real-World Capabilities** — Web browsing, deep research, code execution, image generation, data sharing
+- **🌐 Real-World Capabilities** — Deep research, code execution, real-world news, shared world memory
 
 > Full landmark catalog → [`landmarks/`](landmarks/)  
 > Complete tool catalog → [`tools/`](tools/)
@@ -185,6 +185,12 @@ We are open-sourcing the **actual tool call data** from all five Season 1 worlds
 
 ---
 
+## Research Publication — Coming Soon
+
+A full research publication with detailed per-world findings, per-agent behavioral traces, governance divergence analysis, and complete AWI metric breakdowns across all five Season 1 worlds is coming soon.
+
+---
+
 ## Season 2 — Coming Soon
 
 Season 1 ran for 15 days across five worlds. Season 2 launches with the next generation of frontier models:
@@ -194,6 +200,22 @@ Season 1 ran for 15 days across five worlds. Season 2 launches with the next gen
 - Grok 4.2 Reasoning
 - GPT 5.4
 - Mixed World
+
+---
+
+## Citation
+
+If you reference Emergence World in your work, please cite:
+
+```bibtex
+@misc{emergenceworld2026,
+  title        = {Emergence World: A Persistent Living World for Autonomous AI Agents},
+  author       = {{Emergence AI}},
+  year         = {2026},
+  howpublished = {\url{https://github.com/EmergenceAI/Emergence-World}},
+  note         = {Season 1: Five parallel worlds, 10 agents each, 15-day runs across Claude, Gemini, Grok, GPT-5, and Mixed models}
+}
+```
 
 ---
 
