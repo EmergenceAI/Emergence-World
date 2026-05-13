@@ -135,19 +135,12 @@ Key world features:
 - **🔧 120+ Interactive Tools** — Governance, research, social interaction, resource management, content creation, and more
 - **🌐 Real-World Capabilities** — Deep research, code execution, real-world news, shared world memory
 
-<p align="center">
-  <img src="docs/EMERGENCE_WORLD_MAP.png" alt="Emergence World — relational map of agents, tools, world, and subsystems" width="600"/>
-</p>
-<p align="center">
-  <em>How the pieces fit: agents act <strong>only</strong> through tools; tools are gated by location in the world.</em>
-</p>
-
 > Full landmark catalog → [`landmarks/`](landmarks/)  
 > Complete tool catalog → [`tools/`](tools/)
 
 ---
 
-## Stack at a Glance
+## Technical Architecture
 
 Emergence World is a full-stack system combining a 3D React frontend with a Python simulation backend:
 
