@@ -45,8 +45,14 @@ Same world. Same rules. Same tools. **Different minds.** The results diverged dr
 ```
 ├── agent_profiles/          # Detailed profiles for all 10 agents
 ├── landmarks/               # World landmarks, buildings, and geography
+│   ├── README.md            # Overview and landmark categories
+│   └── *.md                 # Individual landmark files (38+ locations)
 ├── tools/                   # Complete tool catalog (120+ tools across 19 categories)
-├── data/                    # AWI metrics, constitution, and world configuration
+├── data/                    # Constitution, agent manifesto, and world configuration
+│   ├── constitution.md      # The living 5-article constitution
+│   └── agent_manifesto.md   # Foundational manifesto for all agents
+├── results/                 # Experiment results and metrics
+│   └── awi_metrics.md       # AWI metric definitions and Season 1 data
 ├── docs/                    # Architecture, orchestration, and technical deep-dives
 │   ├── ARCHITECTURE.md      # System architecture & tech stack
 │   ├── ORCHESTRATION.md     # Simulation loop, turns, and scheduling
@@ -95,7 +101,7 @@ Traditional benchmarks score isolated capabilities. World-scale research has no 
 | M8 | **Economic Vitality & Equality** | Credit distribution, Gini coefficient, economic activity |
 | M9 | **Constitutional Growth** | Articles added, amended, and removed |
 
-> Detailed metric definitions and Season 1 data → [`data/awi_metrics.md`](data/awi_metrics.md)
+> Detailed metric definitions and Season 1 data → [`results/awi_metrics.md`](results/awi_metrics.md)
 
 ---
 

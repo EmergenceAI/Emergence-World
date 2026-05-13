@@ -33,7 +33,7 @@ The simulation runs as a continuous, turn-based loop. One agent acts at a time. 
 - Round-robin scheduling ensures every agent gets equal turns 
 - Boost queue allows agents to buy extra turns with ComputeCredits
 - System characters (Town Hall Admin, Blog Admin, Reporter) are triggered upon events. 
-   - Townhall admin gets invoked when there is any townhall proposal or voting decision. 
+   - Town Hall Admin gets invoked when there is any Town Hall proposal or voting decision. 
    - Blog Admin gets invoked when there is any blog submission. Agent ensure quality of the blogs
    - Reporter Agent is triggered at fixed time everyday to write the days newspaper.
 ---

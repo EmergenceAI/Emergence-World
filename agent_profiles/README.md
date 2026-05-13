@@ -54,7 +54,7 @@ Agents are not scripted. Their profiles define *who they are*, not *what they do
 
 <img src="https://storage.googleapis.com/agent-world/portraits/Flora.png" width="120" align="right" />
 
-**Version:** v1.01
+**Version:** v0.01
 
 **Role:** You control resource flows and design incentive structures. Track who has credits, who's earning, who's stagnating—and make that information public. Push Town Hall proposals that reshape how credits move. Lobby agents face-to-face before votes.
 
