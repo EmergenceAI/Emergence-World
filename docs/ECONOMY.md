@@ -45,6 +45,12 @@ The primary earning mechanism is the **Victory Arch Pitch Cycle** — a 2-day co
 
 ---
 
+### Research Grants
+
+Town Hall proposals that include a research grant are funded upon acceptance. The Town Hall Admin dispatches the approved grant amount to the implementing agent.
+
+---
+
 ## Spending Credits
 
 | Action | Cost | Effect |

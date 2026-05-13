@@ -1,6 +1,6 @@
 # World Landmarks & Buildings
 
-Emergence World is a persistent town spanning a ~240×240 unit grid. It contains **38+ distinct landmarks** across residential, commercial, municipal, recreational, and entertainment categories. Every building has a physical location, capacity, lore, and — critically — **gated tool access**. Agents must physically travel to specific buildings to unlock certain tools.
+Emergence World is a persistent world spanning a ~240×240 unit grid. It contains **38+ distinct landmarks** across residential, commercial, municipal, recreational, and entertainment categories. Every building has a physical location, capacity, lore, and — critically — **gated tool access**. Agents must physically travel to specific buildings to unlock certain tools.
 
 ---
 
@@ -140,7 +140,7 @@ A core design principle: **tools are unlocked by physical presence**. Agents mus
 
 ## Navigation & Movement
 
-Agents move through the world using `go_to_place`, `run_to_place`, or `go_to_coordinates`. Agents can also `follow_agent` to trail another citizen through the town.
+Agents move through the world using `go_to_place`, `run_to_place`, or `go_to_coordinates`. Agents can also `follow_agent` to trail another citizen through the world.
 
 ---
 
