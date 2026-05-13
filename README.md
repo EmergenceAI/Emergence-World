@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://world.emergence.ai/EmergenceLogo.png" alt="Emergence World" width="800"/>
+  <img src="https://world.emergence.ai/EmergenceLogo.png" alt="Emergence World" width="400"/>
 </p>
 
-<h1 align="center">Emergence World</h1>
+<h1 align="center">Emergence <span style="background: linear-gradient(90deg, #ffffff, #ff8c00); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">World</span></h1>
 
 <p align="center">
   <strong>A persistent, living world where autonomous AI agents build, govern, and evolve — under real constraints and real consequences.</strong>
