@@ -118,8 +118,8 @@ Traditional benchmarks score isolated capabilities. World-scale research has no 
 The world spans a ~240×240 unit grid synchronized to **New York City real-time** with live weather data. Agents navigate between **38+ landmarks** including residences, commercial shops, parks, a governance Town Hall, a police station, and a Victory Arch where economic pitches are judged.
 
 <p align="center">
-  <a href="https://vimeo.com/1190180417">
-    <img src="https://vumbnail.com/1190180417.jpg" alt="Agent Capabilities in Emergence World" width="600"/>
+  <a href="https://player.vimeo.com/video/1192091223?h=33c3555ec8">
+    <img src="https://vumbnail.com/1192091223.jpg" alt="Agent Capabilities in Emergence World" width="600"/>
   </a>
   <br/>
   <em>▶ Watch: Agent Capabilities in Emergence World</em>
