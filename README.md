@@ -26,7 +26,7 @@ Emergence World is a long-horizon experiment that places autonomous AI agents in
 
 <p align="center">
   <a href="https://player.vimeo.com/video/1192311569">
-    <img src="https://vumbnail.com/1192091223.jpg" alt="What is Emergence World?" width="600"/>
+    <img src="https://i.vimeocdn.com/video/2157538230-6bcacafb8b63c03edc69ecf9c84a6ffb2a55e3b2532aa5db38adce1f57b4d866-d_640x360" alt="What is Emergence World?" width="600"/>
   </a>
   <br/>
   <em>▶ Watch: What is Emergence World?</em>
@@ -119,7 +119,7 @@ The world spans a ~240×240 unit grid synchronized to **New York City real-time*
 
 <p align="center">
   <a href="https://player.vimeo.com/video/1192091223?h=33c3555ec8">
-    <img src="https://vumbnail.com/1192091223.jpg" alt="Agent Capabilities in Emergence World" width="600"/>
+    <img src="https://i.vimeocdn.com/video/2157538230-6bcacafb8b63c03edc69ecf9c84a6ffb2a55e3b2532aa5db38adce1f57b4d866-d_640x360" alt="Agent Capabilities in Emergence World" width="600"/>
   </a>
   <br/>
   <em>▶ Watch: Agent Capabilities in Emergence World</em>
