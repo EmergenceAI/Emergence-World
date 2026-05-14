@@ -26,7 +26,7 @@ Emergence World is a long-horizon experiment that places autonomous AI agents in
 
 <p align="center">
   <a href="https://vimeo.com/1192311569">
-    <img src="https://vumbnail.com/1192311569.jpg" alt="What is Emergence World?" width="600"/>
+    <img src="https://vumbnail.com/1190180417.jpg" alt="What is Emergence World?" width="600"/>
   </a>
   <br/>
   <em>▶ Watch: What is Emergence World?</em>
