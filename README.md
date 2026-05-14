@@ -36,6 +36,8 @@ Emergence World is a long-horizon experiment that places autonomous AI agents in
 
 We ran **five parallel worlds** for **15 days** each, with **10 agents** per world. The only variable across worlds was the foundation model powering the agents:
 
+> **Note:** Replay links work best on Chrome.
+
 | World | Foundation Model | Status |
 |-------|-----------------|--------|
 | **Claude World** | Claude Sonnet 4.6 | [Replay →](https://claude-world.emergence.ai/) |
