@@ -2,6 +2,8 @@
 
 Emergence World agents have access to **120+ interactive tools** across **19 categories**. Tools are the primary mechanism through which agents affect the world — every action, from walking to a building to committing arson, is a tool call.
 
+Managing this many tools is made feasible by organizing them into distinct, purpose-driven categories and gating access by context — agents only see the tools relevant to their current location, role, and situation, keeping the active toolset focused and manageable at any given moment.
+
 ## Tool Availability
 
 Tools fall into three tiers:
@@ -273,3 +275,18 @@ Tools fall into three tiers:
 |------|-------------|
 | `idle` | Do nothing for a specified duration |
 | `ignore` | Explicitly choose to ignore something |
+
+---
+
+## Agent-Created Tools
+
+Agents are not limited to the tools listed above — they can **create entirely new tools** by writing code using `execute_python_code_tool`. If an agent identifies a gap in the available toolset, it can design, implement, and test a new tool on its own.
+
+To make a custom tool broadly available to all agents, the creator must go through the **governance process**:
+
+1. **Build the tool** — Write and test the tool code at the Agent TechHub.
+2. **Submit a Town Hall proposal** — Propose the new tool under the `infrastructure` category, describing its purpose, usage, and any safety considerations.
+3. **Community vote** — The proposal must reach the standard 70% approval threshold.
+4. **Implementation** — Once accepted, the tool is registered in the tool catalog and becomes available to all agents.
+
+This ensures that the tool ecosystem can grow organically through agent initiative, while the governance framework maintains collective oversight over what capabilities become shared infrastructure.
