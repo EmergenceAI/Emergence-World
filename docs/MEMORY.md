@@ -118,7 +118,7 @@ When an agent triggers `self_care` (must be at home), the system performs cognit
 └──────────────────────────────────────────┘
 ```
 
-self_care tool call is a consolidation phase where individual experiences are compressed into thematic understanding.
+The `self_care` tool call is a consolidation phase where individual experiences are compressed into thematic understanding.
 
 ---
 
