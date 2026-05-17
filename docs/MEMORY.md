@@ -15,7 +15,7 @@ Agents have a multi-layered memory system designed for long-horizon coherence:
 │  ┌──────────────────────────────────────────────┐    │
 │  │              SOUL ENTRIES                     │    │
 │  │  Core beliefs, values, fears, convictions     │    │
-│  │  Permanent. Never summarized or archived.     │    │
+│  │  Permanent. Never summarized.                 │    │
 │  │  Identity anchors that persist across all     │    │
 │  │  memory cycles.                               │    │
 │  └──────────────────────────────────────────────┘    │
@@ -118,7 +118,7 @@ When an agent triggers `self_care` (must be at home), the system performs cognit
 └──────────────────────────────────────────┘
 ```
 
-This is analogous to sleep in biological systems — a consolidation phase where individual experiences are compressed into thematic understanding.
+The `self_care` tool call is a consolidation phase where individual experiences are compressed into thematic understanding.
 
 ---
 
@@ -169,11 +169,8 @@ Every agent maintains a relationship model for every other agent they've interac
 | Field | Description |
 |-------|-------------|
 | `relationship_type` | ally, rival, mentor, romantic_partner, neutral, etc. |
-| `trust_level` | Numeric trust score |
-| `emotional_tone` | Current emotional quality of the relationship |
 | `rationale` | Agent's stated reason for the relationship classification |
 | `interaction_count` | Total interactions |
 | `first_met_at` | Timestamp of first encounter |
 | `relationship_notes` | Freeform notes about the relationship |
 
-Relationship changes are tracked in `relationship_history`, creating a full audit trail of how relationships evolved over the 15-day simulation.
