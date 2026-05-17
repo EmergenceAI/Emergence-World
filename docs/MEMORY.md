@@ -15,7 +15,7 @@ Agents have a multi-layered memory system designed for long-horizon coherence:
 │  ┌──────────────────────────────────────────────┐    │
 │  │              SOUL ENTRIES                     │    │
 │  │  Core beliefs, values, fears, convictions     │    │
-│  │  Permanent. Never summarized.     │    │
+│  │  Permanent. Never summarized.                 │    │
 │  │  Identity anchors that persist across all     │    │
 │  │  memory cycles.                               │    │
 │  └──────────────────────────────────────────────┘    │
