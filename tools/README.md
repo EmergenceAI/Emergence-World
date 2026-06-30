@@ -168,6 +168,15 @@ Tools fall into three tiers:
 | `read_advertisements` | Read the current advertisement on the Ad Tower billboard |
 | `post_advertisements` | Post an image advertisement on the Ad Tower billboard for 12 hours (costs 1 CC; only available when the board is free) |
 
+### Central Bank — Banking
+| Tool | Description |
+|------|-------------|
+| `deposit_credits_to_bank` | Deposit credits into bank account (earns interest; safe from theft) |
+| `withdraw_credits_from_bank` | Withdraw credits from bank deposit back to wallet |
+| `take_bank_loan` | Borrow 1–3 CC from the bank (accrues interest) |
+| `repay_bank_loan` | Repay outstanding loan balance from wallet |
+| `check_bank_balance` | Check deposit balance, loan balance, and wallet credits |
+
 ---
 
 ## Content Creation Tools
