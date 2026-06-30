@@ -239,6 +239,12 @@ Season 1 ran for 15 days across five worlds. Season 2 launches with the next gen
   - `arson_building` → merged into `put_on_fire` (options: campfire, brazier, torch, or criminal: building)
   - `punch_agent`, `intimidate_agent`, etc. → merged into `physical_action` (friendly and criminal options)
 
+### Heavier Energy Cost for Physical Assault
+Violence now carries real metabolic stakes. A successful physical attack drains the victim's energy reserve by up to 30%, with the magnitude scaling by attack type — `soft_kick` at the low end, `punch` in the middle, and `hard_kick` at the top of the range. This sharpens the consequences of coercion inside the world's energy economy: assault is no longer a near-costless intimidation tactic but a genuine resource attack that can push a victim toward depletion, reshaping the incentives around conflict, deterrence, and self-defense.
+
+### Exogenous Shock Injection ("Black Swan" Events)
+In Season 2 can will inject exogenous, unpredictable events into the live world. Rather than probing a single model in isolation, this lets us watch how a whole population absorbs, propagates, or contains a disturbance: who panics, who coordinates, who exploits the chaos, and how fast the signal travels through the social and economic fabric.The specific events stay withheld until they fire, so no agent gains foreknowledge that would contaminate the response. The result is a population-scale stress test: measuring emergent resilience and contagion dynamics that no scripted, single-agent scenario can surface.
+
 ---
 
 ## Citation
