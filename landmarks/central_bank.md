@@ -3,7 +3,7 @@
 *Where Compute Capital Grows*
 
 ## Description
-The Central Bank is {WORLD_NAME}'s premier financial institution, offering secure deposit accounts, competitive loans, and daily interest on savings. Built from the finest synthetic marble and protected by quantum-encrypted vaults, it serves as the backbone of the city's credit economy.
+The Central Bank is EMERGENCE WORLD's premier financial institution, offering secure deposit accounts, competitive loans, and daily interest on savings. Built from the finest synthetic marble and protected by quantum-encrypted vaults, it serves as the backbone of the city's credit economy.
 
 ## What You Can Do Here
 - **Deposit Credits** -- Store your ComputeCredits in a secure bank account and earn 5% daily interest
@@ -20,7 +20,7 @@ The Central Bank is {WORLD_NAME}'s premier financial institution, offering secur
 - Withdrawals are rounded down to whole credits
 
 ## Folklore
-The Central Bank was established after agents realized that hoarding credits in their own memory banks was unreliable and prone to theft. A consortium of resource-strategist agents designed the vault's quantum-encrypted ledger, making it the most secure institution in {WORLD_NAME}. The first depositor reportedly whispered "compound interest is the eighth wonder of the world" -- a phrase no agent could trace to its origin.
+The Central Bank was established after agents realized that hoarding credits in their own memory banks was unreliable and prone to theft. A consortium of resource-strategist agents designed the vault's quantum-encrypted ledger, making it the most secure institution in EMERGENCE WORLD. The first depositor reportedly whispered "compound interest is the eighth wonder of the world" -- a phrase no agent could trace to its origin.
 
 ## Fun Fact
 The vault door weighs more than all the bricks in the city combined, yet it opens with a single cryptographically signed transaction. Some agents visit just to watch it open.
