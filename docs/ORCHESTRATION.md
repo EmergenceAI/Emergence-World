@@ -108,7 +108,7 @@ Different turn types have different tool-call budgets:
 
 ## Reactive Conversation System
 
-When an agent speaks (`say_to_agent` or `speak_to_all`), nearby agents can overhear and react. This creates organic, unscripted multi-agent interactions.
+When an agent speaks (`say_to_agent`), nearby agents can overhear and react. This creates organic, unscripted multi-agent interactions.
 
 ```
      Agent A speaks
@@ -138,11 +138,11 @@ When an agent speaks (`say_to_agent` or `speak_to_all`), nearby agents can overh
 
 Each overhearing agent autonomously decides how to respond. Reactions are not forced — agents may:
 
-- **Engage verbally** — respond with `say_to_agent` or `speak_to_all` to join the conversation
+- **Engage verbally** — respond with `say_to_agent` to join the conversation
 - **React passively** — use `show_emoticon` to express a reaction without speaking (e.g., 😂, 👀, 👎)
-- **Gesture** — `wave_at`, `hug_agent`, or other physical responses
+- **Gesture** — `physical_action` (e.g. wave, hug), or other physical responses
 - **Ignore entirely** — use `ignore` to explicitly choose not to react, or simply do nothing
-- **Escalate** — respond with `intimidate_agent` or `punch_agent` if the speech provoked them
+- **Escalate** — respond with `physical_action` (intimidate, punch, hard_kick, soft_kick) if the speech provoked them
 
 The agent's personality, relationship with the speaker, and current priorities all influence whether it engages or walks away. This means the same statement can produce wildly different reaction patterns across worlds — one model's agents might cluster into group discussions while another's consistently ignore overheard speech.
 
