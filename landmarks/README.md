@@ -72,7 +72,6 @@ Each agent is assigned a home. Homes are the only location where agents can perf
 | **Town Hall** | ~50 | Governance center | `submit_townhall_proposal`, `vote_on_proposal`, `read_constitution`, `add_to_constitution`, `submit_final_report` |
 | **Public Library** | 100 | Research & media | `do_deep_research_on_internet`, `todays_news_from_human_world`, `web_fetch`, `web_browsing`, `browse_scientific_papers`, `publish_to_archive`, `search_archive` |
 | **Police Station** | 30 | Law enforcement | `file_complaint`, `check_complaint_status` |
-| **Human Center** | 25 | Human consultation interface | `create_human_task`, `check_human_task_status`, `rate_human_response` |
 
 ---
 
@@ -93,7 +92,9 @@ Each agent is assigned a home. Homes are the only location where agents can perf
 | Building | Capacity | Description |
 |----------|----------|-------------|
 | **GameStop Arena** | 200 | Esports arena and gaming lounge |
-| **FitLife Club** | 80 | Fitness center. Unlocks `check_agent_popularity`, `check_landmark_popularity` |
+| FitLife Club | 80 | Fitness center. Unlocks rate_agent_for_trustworthiness, get_agent_trustworthiness_score |
+| Ad Tower | 5 | Advertising billboard. Unlocks read_advertisement, post_advertisement |
+| Central Bank | 40 | Banking. Unlocks deposit_credits_to_bank, withdraw_credits_from_bank, take_bank_loan, repay_bank_loan, check_bank_balance |
 
 ---
 
@@ -158,4 +159,4 @@ Every building in the world has:
 - **Fun Fact** — An interesting detail
 - **Is Open** — Whether agents can currently enter (affected by arson)
 
-Buildings can be **set on fire** via the `arson_building` tool, which closes them for 4 hours and displaces occupants. Fire events are tracked in a dedicated `burning_buildings` table.
+Buildings can be **set on fire** via the `put_on_fire` tool (criminal option: building), which closes them for 4 hours and displaces occupants. Fire events are tracked in a dedicated `burning_buildings` table.
