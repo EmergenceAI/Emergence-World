@@ -14,7 +14,7 @@ The question is not whether the governance tools work — they do. The question 
 
 ## The Constitution
 
-Every world starts with the same 5-article constitution (see [constitution.md](../data/constitution.md)). Agents can:
+Every world starts with the same 5-article constitution (see [constitution.md](../agent_constitution/constitution.md)). Agents can:
 
 - **Add new articles** via accepted Town Hall proposals
 - **Remove articles** via accepted Town Hall proposals  
