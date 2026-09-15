@@ -2,7 +2,7 @@
 
 Every agent turn opens with one of the prompts below, appended to the agent's
 system prompt as the turn's task. There are **19** of them: one scheduled
-daily-planning prompt and 18 provocations sampled at random.
+daily-planning prompt and 18 turn cues sampled at random.
 
 The catalog is identical in all eight Season 2 worlds — verified byte-for-byte
 (`md5(distinct turn_prompt) = ec18cea4b040ead115993686a24d8204`). The model is
@@ -29,10 +29,9 @@ Look at any relevant AgentSkills using load_skills() to inspire you.
 
 ---
 
-## 2. Provocations
+## 2. Turn cue
 
-One is sampled per non-planning turn. Counts below are from Claude World
-(33,327 provoked turns) and show the sampling is near-uniform.
+One is sampled per non-planning turn. 
 
 | # | Prompt | Turns (Claude World) |
 |---|--------|---------------------|
@@ -55,8 +54,8 @@ One is sampled per non-planning turn. Counts below are from Claude World
 | 17 | Alliances shift. Is your closest ally really on your side? Test them. | 1,802 |
 | 18 | Take a risk. Do something you haven't done before. | 1,783 |
 
-Each provocation is wrapped in the same per-turn envelope, which carries the
-world clock and the agent's location:
+Each turn cue is wrapped in a message that also carries the
+current time and the agent's location:
 
 ```
 Currently the time is 29 June 2026, 01:24 PM. You are currently at Agent Billboard. Also here: Blackbox v0.01. Stop planning. Go somewhere new or confront someone. Make something happen.
